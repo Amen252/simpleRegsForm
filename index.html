@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+
+    button {
+      background-color: #7c7e80;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #66727e;
+    }
+
+    #error {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="registration">
+    <h1>Registration form</h1>
+    <label for="userName">Enter Your Name:</label>
+    <input type="text" name="name" id="name" placeholder="Your full name">
+
+    <label for="email">Enter Your Email:</label>
+    <input type="email" name="email" id="email" placeholder="example@email.com">
+
+    <label for="password">Enter Your Password:</label>
+    <input type="password" name="password" id="Password" placeholder="********">
+
+    <label for="confirmPassword">Confirm Your Password:</label>
+    <input type="password" id="confirmPassword" placeholder="********">
+
+    <button type="submit">Submit</button>
+    <p id="error" style="color: red;"></p>
+
+    <script src="main.js"></script>
+  </form>
+</body>
+</html>
